@@ -5,6 +5,15 @@
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Frappe Insights</title>
+
+		<style>
+			.dashboard-item .overflow-hidden > div:last-child {
+				position: fixed !important;
+				max-height: 80%;
+				overflow: auto;
+				pointer-events: all !important;
+			}
+		</style>
 	</head>
 	<body class="h-full">
 		<div id="app" class="h-full"></div>
