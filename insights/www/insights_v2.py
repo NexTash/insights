@@ -11,9 +11,9 @@ no_cache = 1
 
 def get_context(context):
     is_v2_user = frappe.db.count("Insights Query", cache=True) > 0
-    if not is_v2_user:
-        frappe.local.flags.redirect_location = "/insights"
-        raise frappe.Redirect
+    # if not is_v2_user:
+    #     frappe.local.flags.redirect_location = "/insights"
+    #     raise frappe.Redirect
 
     csrf_token = frappe.sessions.get_csrf_token()
     frappe.db.commit()

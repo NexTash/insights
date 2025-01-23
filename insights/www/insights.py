@@ -13,10 +13,10 @@ no_cache = 1
 
 
 def get_context(context):
-    is_v2_site = frappe.db.count("Insights Query", cache=True) > 0
-    if not is_v2_site:
-        continue_to_v3(context)
-        return
+    # is_v2_site = frappe.db.count("Insights Query", cache=True) > 0
+    # if not is_v2_site:
+    #     continue_to_v3(context)
+    #     return
 
     v2_routes_pattern = [
         r"\/insights\/query\/?",
