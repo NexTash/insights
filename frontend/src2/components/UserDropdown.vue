@@ -112,16 +112,16 @@ const showSwitchToV2Dialog = ref(false)
 const showLoginToFCDialog = ref(false)
 
 const userDropdownOptions = ref([
-	{
-		label: __('Documentation'),
-		icon: h(HelpCircle),
-		onClick: () => window.open('https://docs.frappe.io/insights', '_blank'),
-	},
-	{
-		label: __('Join Telegram Group'),
-		icon: h(MessageCircle),
-		onClick: () => window.open('https://t.me/frappeinsights', '_blank'),
-	},
+	// {
+	// 	label: __('Documentation'),
+	// 	icon: h(HelpCircle),
+	// 	onClick: () => window.open('https://docs.frappe.io/insights', '_blank'),
+	// },
+	// {
+	// 	label: __('Join Telegram Group'),
+	// 	icon: h(MessageCircle),
+	// 	onClick: () => window.open('https://t.me/frappeinsights', '_blank'),
+	// },
 	{
 		label: __('Log out'),
 		icon: h(LogOut),
